@@ -62,7 +62,6 @@ class GeneralLedger(db.Model):
     entry_description = db.Column(db.String)
     other_detail = db.Column(db.String)
 
-
 class Parties(db.Model):
     __tablename__ = 'parties'
 
@@ -81,7 +80,7 @@ class PartiesInTransaction(db.Model):
     _pk = db.PrimaryKeyConstraint('transaction_id', 'party_id', name='parties_in_transaction_pkey')
 
 
-async def init():
+async def migrate():
     await db.set_bind('postgres://miftah:fonez@localhost/accounting')
     await db.gino.create_all()
 
@@ -200,7 +199,39 @@ async def init():
     cogs10 = await ChartOfAccount.create(account_number='5700', account_group_number='5000', account_name='COGS, Salaries and Wages')
     cogs11 = await ChartOfAccount.create(account_number='5730', account_group_number='5000', account_name='COGS, Contract Labor')
     cogs12 = await ChartOfAccount.create(account_number='5750', account_group_number='5000', account_name='COGS, Freight')
-    cogs13 = await ChartOfAccount.create(account_number='5730', account_group_number='5000', account_name='COGS, Other')
+    cogs13 = await ChartOfAccount.create(account_number='5800', account_group_number='5000', account_name='COGS, Other')
+    cogs14 = await ChartOfAccount.create(account_number='5850', account_group_number='5000', account_name='Inventory Adjustment')
+    cogs15 = await ChartOfAccount.create(account_number='5900', account_group_number='5000', account_name='Purchase Return and Allowances')
+    cogs16 = await ChartOfAccount.create(account_number='5950', account_group_number='5000', account_name='Purchase Discount')
+
+    # Expenses
+    exp01 = await ChartOfAccount.create(account_number='6000', account_group_number='6000', account_name='Default Purchase Expense')
+    exp02 = await ChartOfAccount.create(account_number='6010', account_group_number='6000', account_name='Advertising Expense')
+    exp03 = await ChartOfAccount.create(account_number='6050', account_group_number='6000', account_name='Amortization Expense')
+    exp04 = await ChartOfAccount.create(account_number='6100', account_group_number='6000', account_name='Auto Expenses')
+    exp05 = await ChartOfAccount.create(account_number='6150', account_group_number='6000', account_name='Bad Debt Expense')
+    exp06 = await ChartOfAccount.create(account_number='6200', account_group_number='6000', account_name='Bank Fees')
+    exp07 = await ChartOfAccount.create(account_number='6250', account_group_number='6000', account_name='Cash Over and Short')
+    exp08 = await ChartOfAccount.create(account_number='6300', account_group_number='6000', account_name='Charitable Contibutions Expense')
+    exp09 = await ChartOfAccount.create(account_number='6350', account_group_number='6000', account_name='Commissions and Fees Expense')
+    exp10 = await ChartOfAccount.create(account_number='6400', account_group_number='6000', account_name='Depreciation Expense')
+    exp11 = await ChartOfAccount.create(account_number='6450', account_group_number='6000', account_name='Dues and Subscriptions Expense')
+    exp12 = await ChartOfAccount.create(account_number='6500', account_group_number='6000', account_name='Employee Benefit Expense, Health Insurance')
+    exp13 = await ChartOfAccount.create(account_number='6510', account_group_number='6000', account_name='Employee Benefit Expense, Pension Plan')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
