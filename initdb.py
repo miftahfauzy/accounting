@@ -218,6 +218,20 @@ async def migrate():
     exp11 = await ChartOfAccount.create(account_number='6450', account_group_number='6000', account_name='Dues and Subscriptions Expense')
     exp12 = await ChartOfAccount.create(account_number='6500', account_group_number='6000', account_name='Employee Benefit Expense, Health Insurance')
     exp13 = await ChartOfAccount.create(account_number='6510', account_group_number='6000', account_name='Employee Benefit Expense, Pension Plan')
+    exp14 = await ChartOfAccount.create(account_number='6520', account_group_number='6000', account_name='Employee Benefit Expense, Profit Sharing Plan')
+    exp15 = await ChartOfAccount.create(account_number='6530', account_group_number='6000', account_name='Employee Benefit Expense, Other')
+    exp16 = await ChartOfAccount.create(account_number='6550', account_group_number='6000', account_name='Freight Expense')
+    exp17 = await ChartOfAccount.create(account_number='6600', account_group_number='6000', account_name='Gifts Expense')
+    exp18 = await ChartOfAccount.create(account_number='6650', account_group_number='6000', account_name='Income Tax Expense, Federal')
+    exp19 = await ChartOfAccount.create(account_number='6660', account_group_number='6000', account_name='Income Tax Expense, State')
+    exp20 = await ChartOfAccount.create(account_number='6670', account_group_number='6000', account_name='Income Tax Expense, Local')
+    
+
+
+
+
+
+
 
 
 
