@@ -225,68 +225,33 @@ async def migrate():
     exp18 = await ChartOfAccount.create(account_number='6650', account_group_number='6000', account_name='Income Tax Expense, Federal')
     exp19 = await ChartOfAccount.create(account_number='6660', account_group_number='6000', account_name='Income Tax Expense, State')
     exp20 = await ChartOfAccount.create(account_number='6670', account_group_number='6000', account_name='Income Tax Expense, Local')
-    
+    exp21 = await ChartOfAccount.create(account_number='6700', account_group_number='6000', account_name='Insurance Expense, Product Liability')
+    exp22 = await ChartOfAccount.create(account_number='6710', account_group_number='6000', account_name='Insurance Expense, Vehicle')
+    exp23 = await ChartOfAccount.create(account_number='6800', account_group_number='6000', account_name='Laundry and Dry Cleaining Expense')
+    exp24 = await ChartOfAccount.create(account_number='6850', account_group_number='6000', account_name='Legal and Professional Expense')
+    exp25 = await ChartOfAccount.create(account_number='6900', account_group_number='6000', account_name='Licenses Expense')
+    exp26 = await ChartOfAccount.create(account_number='6950', account_group_number='6000', account_name='Loss on NSF Checks')
 
+    exp27 = await ChartOfAccount.create(account_number='7000', account_group_number='7000', account_name='Maintenance Expense')
+    exp28 = await ChartOfAccount.create(account_number='7050', account_group_number='7000', account_name='Meals and Entertainment Expense')
+    exp29 = await ChartOfAccount.create(account_number='7100', account_group_number='7000', account_name='Office Expense')
+    exp30 = await ChartOfAccount.create(account_number='7200', account_group_number='7000', account_name='Payroll Tax Expense')
+    exp31 = await ChartOfAccount.create(account_number='7250', account_group_number='7000', account_name='Penalties and Fines Expense')
+    exp32 = await ChartOfAccount.create(account_number='7300', account_group_number='7000', account_name='Other Taxes')
+    exp33 = await ChartOfAccount.create(account_number='7350', account_group_number='7000', account_name='Postage Expense')
+    exp34 = await ChartOfAccount.create(account_number='7400', account_group_number='7000', account_name='Rent or Lease Expense')
+    exp35 = await ChartOfAccount.create(account_number='7450', account_group_number='7000', account_name='Repair and Maintenance Expense, Office')
+    exp36 = await ChartOfAccount.create(account_number='7460', account_group_number='7000', account_name='Repair and Maintenance Expense, Vehicle')
+    exp37 = await ChartOfAccount.create(account_number='7550', account_group_number='7000', account_name='Supplies Expense, Office')
+    exp38 = await ChartOfAccount.create(account_number='7600', account_group_number='7000', account_name='Telephone Expense')
+    exp39 = await ChartOfAccount.create(account_number='7620', account_group_number='7000', account_name='Training Expense')
+    exp40 = await ChartOfAccount.create(account_number='7650', account_group_number='7000', account_name='Travel Expense')
+    exp41 = await ChartOfAccount.create(account_number='7700', account_group_number='7000', account_name='Salaries Expense')
+    exp42 = await ChartOfAccount.create(account_number='7750', account_group_number='7000', account_name='Wages Expense')
+    exp43 = await ChartOfAccount.create(account_number='7800', account_group_number='7000', account_name='Utilities Expense')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
+    exp44 = await ChartOfAccount.create(account_number='8900', account_group_number='8000', account_name='Other Expense')
+    exp45 = await ChartOfAccount.create(account_number='9000', account_group_number='9000', account_name='Gain/Loss on Sale of Assets')
 
 
 asyncio.get_event_loop().run_until_complete(init())
