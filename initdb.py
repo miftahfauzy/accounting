@@ -85,14 +85,15 @@ async def migrate():
     await db.gino.create_all()
 
     #init Account Group
-    acc1 = await AccountGroup.create(account_group_number='0001', first_number='1000', last_number='1999', account_group_name='Asset Accounts')    
-    acc2 = await AccountGroup.create(account_group_number='0002', first_number='2000', last_number='2999', account_group_name='Liability Accounts')
-    acc3 = await AccountGroup.create(account_group_number='0003', first_number='3000', last_number='3999', account_group_name='Equity Accounts')
-    acc4 = await AccountGroup.create(account_group_number='0004', first_number='4000', last_number='4999', account_group_name='Revenue Accounts')
-    acc5 = await AccountGroup.create(account_group_number='0005', first_number='5000', last_number='5999', account_group_name='COGS Accounts')
-    acc6 = await AccountGroup.create(account_group_number='0006', first_number='6000', last_number='6999', account_group_name='Expenses Accounts')
-    acc7 = await AccountGroup.create(account_group_number='0007', first_number='7000', last_number='7999', account_group_name='Other Revenue Accounts')
-    acc8 = await AccountGroup.create(account_group_number='0008', first_number='8000', last_number='8999', account_group_name='Other Expenses Accounts')
+    acc1 = await AccountGroup.create(account_group_number='1000', first_number='1000', last_number='1999', account_group_name='Asset Accounts')    
+    acc2 = await AccountGroup.create(account_group_number='2000', first_number='2000', last_number='2999', account_group_name='Liability Accounts')
+    acc3 = await AccountGroup.create(account_group_number='3000', first_number='3000', last_number='3999', account_group_name='Equity Accounts')
+    acc4 = await AccountGroup.create(account_group_number='4000', first_number='4000', last_number='4999', account_group_name='Revenue Accounts')
+    acc5 = await AccountGroup.create(account_group_number='5000', first_number='5000', last_number='5999', account_group_name='COGS Accounts')
+    acc6 = await AccountGroup.create(account_group_number='6000', first_number='6000', last_number='6999', account_group_name='Expenses Accounts')
+    acc7 = await AccountGroup.create(account_group_number='7000', first_number='7000', last_number='7999', account_group_name='Other Revenue Accounts')
+    acc8 = await AccountGroup.create(account_group_number='8000', first_number='8000', last_number='8999', account_group_name='Other Expenses Accounts')
+    acc9 = await AccountGroup.create(account_group_number='9000', first_number='9000', last_number='9999', account_group_name='Miscellanious Expenses Accounts')
 
     #init Chart of Account
     # Current Assets
@@ -254,4 +255,4 @@ async def migrate():
     exp45 = await ChartOfAccount.create(account_number='9000', account_group_number='9000', account_name='Gain/Loss on Sale of Assets')
 
 
-asyncio.get_event_loop().run_until_complete(init())
+asyncio.get_event_loop().run_until_complete(migrate())
