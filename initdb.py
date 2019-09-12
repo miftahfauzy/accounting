@@ -118,7 +118,7 @@ async def migrate():
     ca19 = await ChartOfAccount.create(account_number='1410', account_group_number='1000', account_name='Employee Advances')
     ca20 = await ChartOfAccount.create(account_number='1420', account_group_number='1000', account_name='Notes Receivable - Current')
     ca21 = await ChartOfAccount.create(account_number='1430', account_group_number='1000', account_name='Prepaid Interest')
-    ca22 = await ChartOfAccount.create(account_number='1410', account_group_number='1000', account_name='Other Current Assets')
+    ca22 = await ChartOfAccount.create(account_number='1470', account_group_number='1000', account_name='Other Current Assets')
 
     # Fixed Assets
     fa1 = await ChartOfAccount.create(account_number='1500', account_group_number='1000', account_name='Furniture and Fixture')
